@@ -1,0 +1,5 @@
+#!C:\Users\Ecole\Desktop\LibreTranslate-main\virtualenv\Scripts\python.exe
+
+from argostranslate import argospm
+
+argospm.main()

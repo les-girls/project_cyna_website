@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-light: #ffffff;
+  --foreground-light: #171717;
+  --background-dark: #0a0a0a;
+  --foreground-dark: #ededed;
+  --purple-light:#8177B6;
+  --purple-dark: #594B9B;
+
+}
+/* 
+html {
+  color: var(--foreground-light);
+  background: var(--background-light);
+  /* font-family: Arial, Helvetica, sans-serif; 
+}
+
+html.dark {
+  color: var(--foreground-dark);
+  background: var(--background-dark);
+  font-family: Arial, Helvetica, sans-serif; 
+} */
+
+@layer base {
+  html{
+    color: var(--text);
+    background: var(--background);
+    font-family: wfont_2cec0a_225ccd98f9cc45bc98b17e5c09f24492,
+          wf_225ccd98f9cc45bc98b17e5c0, orig_avenir_lt_std_95_black, Arial, Helvetica, Roboto
+  }
+  h1 {
+    @apply md:text-5xl text-4xl uppercase
+  }
+  h2 {
+    @apply md:text-3xl text-2xl capitalize
+  }
+  div {
+    @apply md:text-lg text-base normal-case
+  }
+  button{
+    @apply md:text-2xl text-lg capitalize
+  }
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    /* --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%; */
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+    /* --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%; */
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    /* --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%; */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 10% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+    --baniere: #00000082;
+    --secondary: #302082;
+    --secondary-foreground: #fff;
+    --accent: #FF6B00 ;
+    --accent-foreground: #fff;
+    --card:#F2F2F2;
+    --card-foreground: #000;
+    --text: #000000;
+  }
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    /* --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%; */
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    /* --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%; */
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    /* --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%; */
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --baniere: #414244fc;
+    --secondary: #302082;
+    --secondary-foreground: #fff;
+    --accent: #FF6B00 ;
+    --accent-foreground: #fff;
+    --card:#222222;
+    --card-foreground: #fff;
+    --text: #fff;
+  }
+}
+@layer utilities{
+  .bg-purple-light{
+    background: var(--purple-light);
+  }
+  .bg-purple-dark{
+    background: var(--purple-dark);
+  }
+  .bg-baniere{
+    background: var(--baniere);
+  }
+  .clip-best-product {
+    clip-path: xywh(0 0 100% 80% round 63% 0)
+  }
+  .left-direction{
+    direction: rtl ;
+  }
+}
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
