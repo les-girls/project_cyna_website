@@ -1,0 +1,10 @@
+{
+    "scripts": {
+        "dev": "cd cyna && npm run dev",
+        "install": "cd cyna && npm i",
+        "build": "cd cyna && next build",
+        "start": "cd cyna && next start",
+        "lint": "cd cyna && next lint",
+        "translate": "cd translate && libretranslate --load-only en,es,fr"
+    }
+}

@@ -15,10 +15,10 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
 ```
 ## Lancement du serveur
 
-Tout d'abord lancer le serveur de développement
+Tout d'abord, lancer le serveur de développement.
 
 ```bash
-cd project_cyna
+cd cyna
 npm i
 npm run dev
 ```

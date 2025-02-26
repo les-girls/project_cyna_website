@@ -4,7 +4,7 @@ import ImageGrid from './CardImage';
 import { ScrollArea, ScrollBar } from '../ui/scroll-area';
 
 function ImagesGrid({images} : ImagesGridProps) {
-    const [selectedImages, setSelectedImages]= React.useState(images[0])
+    const [selectedImages, setSelectedImages]= React.useState(images.length > 0?images[0]: {image_url:"", id:0})
     return (
         <div className='flex flex-col-reverse'>
             <ScrollArea className='overflow-auto max-w-full '>

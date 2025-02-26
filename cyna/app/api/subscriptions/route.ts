@@ -15,6 +15,7 @@ export async function GET(request : NextRequest) {
         if(error){
             const errorResponse :ApiResponseDto<PostgrestError> = {success: false, message: error.message, data: error}
             return NextResponse.json(errorResponse, { status:NETWORK_ERROR })
+            
         }
         const response: ApiResponseDto<SubscriptionsResponseDto[]> = {
             success: true,

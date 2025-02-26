@@ -1,6 +1,7 @@
 interface ProductDetailProps {
     params: {
       id: string;
+      locale: string;
     };
   }
 

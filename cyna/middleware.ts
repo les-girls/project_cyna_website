@@ -1,9 +1,8 @@
-import { type NextRequest } from "next/server";
-import { updateSession } from "@/utils/supabase/middleware";
-
-export async function middleware(request: NextRequest) {
-  return await updateSession(request);
-}
+import { chain } from "./middlewares/chain";
+import { withI18nMiddleware } from "./middlewares/withI18nMiddleware";
+import { withSessionMiddleware } from "./middlewares/withSessionMiddleware";
+ 
+export default chain([withSessionMiddleware,withI18nMiddleware])
 
 export const config = {
   matcher: [
@@ -15,6 +14,8 @@ export const config = {
      * - images - .svg, .png, .jpg, .jpeg, .gif, .webp
      * Feel free to modify this pattern to include more paths.
      */
-    "/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)",
+    // "/(!api/*)",
+    '/(en|fr)/:path*',
+    "/((?!api|_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)",
   ],
 };
