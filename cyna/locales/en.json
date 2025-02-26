@@ -1,0 +1,17 @@
+{
+    "Products":{
+        "available": "Available immediately",
+        "notavailable": "Service temporarily unavailable",
+        "bestproduct": "Best product",
+        "cta-available": "SUBSCRIBE NOW",
+        "cta-notavailable": "SERVICE UNAVAILABLE",
+        "title-description": "Product description",
+        "technical-description": "Technical specifications",
+        "description": "Description",
+        "scalability": "Scalability",
+        "level-support": "Support level",
+        "performance": "Performance",
+        "prices": "Pricing",
+        "others-solutions": "Other solutions"
+    }
+}

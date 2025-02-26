@@ -1,0 +1,1 @@
+export const LANGAGE_DB = "fr"
